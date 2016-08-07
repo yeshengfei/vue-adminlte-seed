@@ -5,12 +5,13 @@
 ## Development
 
 ```shell
-make dev
+npm install
+npm run dev
 ```
 
 ## Production
 ```
-make dist
+npm run build
 ```
 
 ## License
