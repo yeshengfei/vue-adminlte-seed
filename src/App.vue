@@ -2,8 +2,8 @@
   <div class="wrapper">
     <main-header></main-header>
     <main-sidebar></main-sidebar>
-    <div class="content-wrapper">
-      <hello></hello>
+    <div class="content-wrapper" >
+      <router-view></router-view>
     </div>
     <main-footer></main-footer>
     <control-sidebar></control-sidebar>
@@ -14,7 +14,6 @@
 </template>
 
 <script>
-import Hello from './components/Hello'
 import MainHeader from './components/common/MainHeader'
 import MainSidebar from './components/common/MainSidebar'
 import MainFooter from './components/common/MainFooter'
@@ -22,7 +21,6 @@ import ControlSidebar from './components/common/ControlSidebar'
 
 export default {
   components: {
-    Hello,
     MainHeader,
     MainSidebar,
     MainFooter,
