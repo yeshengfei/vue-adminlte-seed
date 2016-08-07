@@ -2,7 +2,7 @@
   <div class="wrapper">
     <main-header></main-header>
     <main-sidebar></main-sidebar>
-    <div class="content-wrapper" >
+    <div class="content-wrapper">
       <router-view></router-view>
     </div>
     <main-footer></main-footer>
@@ -25,6 +25,26 @@ export default {
     MainSidebar,
     MainFooter,
     ControlSidebar
+  },
+
+  ready: function() {
+    this.fetchPost();
+    // this.fetchUser(this.post.userId);
+  },
+
+  methods: {
+      fetchPost: function() {
+          this.$http.get('/pc.php?method=pc.index', function(data, status, request) {
+
+          });
+      },
+
+      fetchUser: function(userId) {
+          var resource = this.$resource('http://jsonplaceholder.typicode.com/users/:id');
+          resource.get({id: userId}, function(user, status, request) {
+              this.$set('user', user);
+          })
+      }
   }
 }
 </script>

@@ -1,7 +1,9 @@
 import Vue from 'vue'
 import App from './App'
 import VueRouter from "vue-router"
+import VueResource from 'vue-resource'
 import Hello from './components/Hello.vue'
+
 
 /* eslint-disable no-new */
 // new Vue({
@@ -15,7 +17,7 @@ import Hello from './components/Hello.vue'
 //   components: { App }
 // });
 Vue.use(VueRouter);
-
+Vue.use(VueResource);
 // // 创建一个路由器实例
 var router = new VueRouter();
 // 每条路由规则应该映射到一个组件。这里的“组件”可以是一个使用 Vue.extend创建的组件构造函数，也可以是一个组件选项对象。
