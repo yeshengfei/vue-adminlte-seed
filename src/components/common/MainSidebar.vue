@@ -50,7 +50,7 @@
           <ul class="treeview-menu">
             <li><a v-link="{name:'index'}"><i class="fa fa-circle-o"></i> Top Navigation</a></li>
             <li><a v-link="{name:'page2'}"><i class="fa fa-circle-o"></i> Boxed</a></li>
-            <li><a href="pages/layout/fixed.html"><i class="fa fa-circle-o"></i> Fixed</a></li>
+            <li><a v-link="{name:'page3'}"><i class="fa fa-circle-o"></i> Fixed</a></li>
             <li><a href="pages/layout/collapsed-sidebar.html"><i class="fa fa-circle-o"></i> Collapsed Sidebar</a></li>
           </ul>
         </li>

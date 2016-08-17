@@ -35,6 +35,12 @@ router.map(
           require(['./components/Hello2.vue'], resolve)
         }
       },
+        '/page3': {
+            name:'page3',
+            component:function(resolve){
+                require(['./components/Hello3.vue'], resolve)
+            }
+        }
     }
 );
 router.redirect({//定义全局的重定向规则。全局的重定向会在匹配当前路径之前执行。
