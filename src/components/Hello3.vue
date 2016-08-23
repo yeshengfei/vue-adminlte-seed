@@ -1,5 +1,8 @@
 <template>
-    <button class="js_click">点我</button>
+    <div class="content-wrapper">
+        <button class="js_click">点我</button>
+    </div>
+
 </template>
 
 <script>
@@ -29,6 +32,10 @@ export default {
     .moon {
       color: #ff3300;
     }
+  }
+
+  .content-wrapper {
+    height: 800px;
   }
 
 </style>
