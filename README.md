@@ -14,5 +14,8 @@ npm run dev
 npm run build
 ```
 
+## 测试
+点击左侧的导航菜单的三个选项,可以对模块进行异步加载
+
 ## License
 ISC
